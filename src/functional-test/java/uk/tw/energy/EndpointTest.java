@@ -16,6 +16,9 @@ import uk.tw.energy.domain.MeterReadings;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+/**
+ * 通过http请求的方式进行测试
+ */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, classes = App.class)
 public class EndpointTest {
 

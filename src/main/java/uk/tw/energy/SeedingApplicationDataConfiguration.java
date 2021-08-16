@@ -25,6 +25,7 @@ public class SeedingApplicationDataConfiguration {
     private static final String RENEWABLES_PRICE_PLAN_ID = "price-plan-1";
     private static final String STANDARD_PRICE_PLAN_ID = "price-plan-2";
 
+    //电力公司实体，包含名字，电价方案等
     @Bean
     public List<PricePlan> pricePlans() {
         final List<PricePlan> pricePlans = new ArrayList<>();
@@ -34,6 +35,10 @@ public class SeedingApplicationDataConfiguration {
         return pricePlans;
     }
 
+    /**
+     * 为每个电表id生成20组读数
+     * @return
+     */
     @Bean
     public Map<String, List<ElectricityReading>> perMeterElectricityReadings() {
         final Map<String, List<ElectricityReading>> readings = new HashMap<>();
@@ -44,6 +49,10 @@ public class SeedingApplicationDataConfiguration {
         return readings;
     }
 
+    /**
+     * 构造电表id与pricePlanId的对应关系
+     * @return
+     */
     @Bean
     public Map<String, String> smartMeterToPricePlanAccounts() {
         final Map<String, String> smartMeterToPricePlanAccounts = new HashMap<>();

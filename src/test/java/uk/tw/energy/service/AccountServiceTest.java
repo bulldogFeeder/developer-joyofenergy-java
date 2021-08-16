@@ -18,6 +18,7 @@ public class AccountServiceTest {
     @BeforeEach
     public void setUp() {
         Map<String, String> smartMeterToPricePlanAccounts = new HashMap<>();
+        //将一个price-plan-id与smart-meter-id相关联
         smartMeterToPricePlanAccounts.put(SMART_METER_ID, PRICE_PLAN_ID);
 
         accountService = new AccountService(smartMeterToPricePlanAccounts);

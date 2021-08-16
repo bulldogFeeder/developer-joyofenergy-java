@@ -5,6 +5,9 @@ import java.time.DayOfWeek;
 import java.time.LocalDateTime;
 import java.util.List;
 
+/**
+ * 描述电力公司的电费方案，包含了电力公司名字、收费率等
+ */
 public class PricePlan {
 
     private final String energySupplier;

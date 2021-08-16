@@ -11,9 +11,32 @@ java {
 }
 
 repositories {
-    mavenCentral()
+    maven { url 'https://maven.aliyun.com/nexus/content/groups/public' }
+    maven { url 'https://maven.aliyun.com/nexus/content/repositories/google' }
+    maven { url 'https://maven.aliyun.com/nexus/content/repositories/jcenter'}
+
+    maven { url 'http://maven.aliyun.com/nexus/content/repositories/google' }
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+    maven { url 'http://mvnrepository.com' }
+    maven { url 'http://192.168.1.104:8081/nexus/content/groups/public' }
+    maven { url 'https://repo.maven.apache.org/maven2' }
+    maven { url 'https://maven.aliyun.com/repository/public' }
+
     jcenter()
+
+    google()
+
+    mavenCentral()
 }
+//repositories {
+//    maven {
+//        url 'http://maven.aliyun.com/nexus/content/groups/public/'
+//    }
+//    mavenCentral()
+////    mavenCentral()
+////    jcenter()
+//}
 
 sourceSets {
     functionalTest {

@@ -10,6 +10,9 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * 根据指定的number生成对应几组读数list<map<时间点，数值>>
+ */
 public class ElectricityReadingsGenerator {
 
     public List<ElectricityReading> generate(int number) {

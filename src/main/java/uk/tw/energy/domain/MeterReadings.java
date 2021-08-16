@@ -2,6 +2,9 @@ package uk.tw.energy.domain;
 
 import java.util.List;
 
+/**
+ * 描述电表id与其对应读数list
+ */
 public class MeterReadings {
 
     private List<ElectricityReading> electricityReadings;
